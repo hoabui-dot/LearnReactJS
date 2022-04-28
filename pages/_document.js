@@ -25,7 +25,7 @@ class MyDocument extends Document {
                     });
                   }
                 });
-              }s
+              }
           `,
             }}
           />
