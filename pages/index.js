@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import Link from "next/link";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Banner from "../components/Banner/Banner";
 
 export default function Home({ blogs }) {
   return (
@@ -10,7 +11,7 @@ export default function Home({ blogs }) {
       <Head>
         <title>Demo Blog</title>
       </Head>
-      <h1 className={styles["header"]}>Welcome to my blog</h1>
+      {/* <h1 className={styles["header"]}>Welcome to my blog</h1>
       <p className={styles["subtitle"]}>
         This is a subtitle idk what to type here
       </p>
@@ -24,7 +25,8 @@ export default function Home({ blogs }) {
             </Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
+      <Banner />
     </div>
   );
 }
