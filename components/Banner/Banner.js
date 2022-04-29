@@ -3,11 +3,11 @@ import styles from "./Banner.module.scss";
 import Image from "next/image";
 
 const Banner = () => {
-  let { avatar } = attributes;
+  let { thumbnail } = attributes;
 
   return (
     <div className={styles.header__background}>
-      <Image src={avatar} />
+      <Image src={thumbnail} alt={"hehe"} />
     </div>
   );
 };
