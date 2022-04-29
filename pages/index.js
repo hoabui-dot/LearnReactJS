@@ -2,22 +2,25 @@ import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 import Banner from "../components/Banner/Banner";
+import Card from "../components/Card/Card";
 
-export default function Home({ blogs }) {
+export default function Home() {
   return (
-    <div className={styles["container"]}>
-      <Head>
-        <title>Demo Blog</title>
-      </Head>
-      <Banner />
-    </div>
+    <>
+      <div className={styles.container}>
+        <Head>
+          <title>Demo Blog</title>
+        </Head>
+        <Card />
+      </div>
+    </>
   );
 }
 
 export async function getStaticProps() {
-  // List of files in blgos folder
+  // List of files in blogs folder
   const filesInBlogs = fs.readdirSync("./content/blogs");
 
   // Get the front matter and slug (the filename without .md) of all files
