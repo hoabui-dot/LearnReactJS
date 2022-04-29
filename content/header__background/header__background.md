@@ -1,3 +1,3 @@
 ---
-avatar: "/uploads/header.png"
+thumbnail: /uploads/apple3.jpg
 ---
