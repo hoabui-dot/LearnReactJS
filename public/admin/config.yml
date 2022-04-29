@@ -7,11 +7,18 @@ public_folder: "/uploads" # Where the media files can be accesed from the server
 publish_mode: editorial_workflow # For Drafts
 
 collections:
-   - label: "Featured Image"
-    name: "thumbnail"
-    widget: "image"
-    choose_url: true
-    default: "/uploads/header.png"
-    media_library:
-      config:
-        multiple: true
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/header__background/header__background.md"
+        fields:
+          - label: "Featured Image"
+            name: "thumbnail"
+            widget: "image"
+            choose_url: true
+            default: "/uploads/header.png"
+            media_library:
+              config:
+                multiple: true
