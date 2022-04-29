@@ -11,21 +11,6 @@ export default function Home({ blogs }) {
       <Head>
         <title>Demo Blog</title>
       </Head>
-      {/* <h1 className={styles["header"]}>Welcome to my blog</h1>
-      <p className={styles["subtitle"]}>
-        This is a subtitle idk what to type here
-      </p>
-      <ul className={styles["blog-list"]}>
-        {blogs.map(blog => (
-          <li key={blog.slug}>
-            <Link href={`/blog/${blog.slug}`}>
-              <a>
-                {blog.date}:{blog.title}
-              </a>
-            </Link>
-          </li>
-        ))}
-      </ul> */}
       <Banner />
     </div>
   );

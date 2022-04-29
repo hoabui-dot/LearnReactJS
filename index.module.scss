@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@import './assets/scss/vars.module.scss'; // 変数 Variable
+@import './assets/scss/function.module.scss'; // 関数等 Function
+@import './assets/scss/mixin.module.scss'; // mixin
+@import './assets/scss/animated.module.scss'; // mixin
+
+.animated {
+    @include animated;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+.loadingAnimate {
+    @include animated;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fade {
+    -webkit-animation-name: fadeUp;
+    animation-name: fadeUp;
+}
+
+.fadeBanner {
+    -webkit-animation-name: fadeUpBanner;
+    animation-name: fadeUpBanner;
+}
+
+.animate_delay {
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+}
