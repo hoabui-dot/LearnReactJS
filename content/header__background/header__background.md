@@ -1,0 +1,3 @@
+---
+avatar: "/uploads/header.png"
+---
