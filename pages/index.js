@@ -7,12 +7,10 @@ import Card from "../components/Card/Card";
 export default function Home() {
   return (
     <>
-      <div className={styles.container}>
-        <Head>
-          <title>Demo Blog</title>
-        </Head>
-        <Card />
-      </div>
+      <Head>
+        <title>Demo Blog</title>
+      </Head>
+      <Card />
     </>
   );
 }
