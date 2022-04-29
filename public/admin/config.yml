@@ -16,3 +16,10 @@ collections:
           - label: "Featured Image"
             name: "thumbnail"
             widget: "image"
+      - label: "Card"
+        name: "Card"
+        file: "content/Card/Card.md"
+        fields:
+          - label: "Featured Image"
+            name: "thumbnail"
+            widget: "image"
