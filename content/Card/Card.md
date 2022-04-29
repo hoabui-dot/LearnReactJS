@@ -1,3 +1,3 @@
 ---
-thumbnail: /uploads/apple3.jpg
+thumbnail: /uploads/profile.png
 ---
