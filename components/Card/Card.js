@@ -80,7 +80,7 @@ const Card = () => {
             <i className='fa-solid fa-plus'></i>
           </button>
           <figure className={styles.avatar}>
-            <Image src={thumbnail} alt='Avatar' />
+            <Image src={thumbnail} alt='Avatar' width={400} height={400} />
           </figure>
         </div>
       </div>

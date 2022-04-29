@@ -1,9 +1,7 @@
 import fs from "fs";
 import matter from "gray-matter";
-import Link from "next/link";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
-import Banner from "../components/Banner/Banner";
 import Card from "../components/Card/Card";
 
 export default function Home() {
