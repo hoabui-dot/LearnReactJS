@@ -32,5 +32,7 @@ content5: I completed this course from this prestigious institution. I
 title6: Web Development
 description6: Lipro University
 date6: Jan 2011 - Mar 2012
-content6: v
+content6: I completed this course from this prestigious institution. I
+  successful completed all the credits without any fallout and got A grade
+  overall.
 ---
