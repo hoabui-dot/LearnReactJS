@@ -2,7 +2,7 @@
 @mixin clear {
     *zoom: 1;
     &:after {
-        content: "";
+        content: '';
         display: block;
         clear: both;
         visibility: hidden;
@@ -149,9 +149,9 @@
 
 @mixin font-face($fontFamilyName, $fontName, $fontWeight) {
     @font-face {
-        font-family: "#{$fontFamilyName}";
-        src: url("../fonts/#{$fontName}.ttf") format("openType"), url("../fonts/#{$fontName}.woff") format("woff"),
-            url("../fonts/#{$fontName}.woff2") format("woff2");
+        font-family: '#{$fontFamilyName}';
+        src: url('../fonts/#{$fontName}.ttf') format('openType'), url('../fonts/#{$fontName}.woff') format('woff'),
+            url('../fonts/#{$fontName}.woff2') format('woff2');
         @if $fontWeight == normal {
             font-weight: normal;
             font-style: normal;

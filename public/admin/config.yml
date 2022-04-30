@@ -24,3 +24,6 @@ collections:
           - label: "Featured Image"
             name: "thumbnail"
             widget: "image"
+          - label: "Featured Image"
+            name: "background"
+            widget: "image"

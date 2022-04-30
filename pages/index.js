@@ -2,15 +2,14 @@ import fs from "fs";
 import matter from "gray-matter";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
-import Card from "../components/Card/Card";
-
+import Banner from "../components/Banner";
 export default function Home() {
   return (
     <>
       <Head>
         <title>Demo Blog</title>
       </Head>
-      <Card />
+      <Banner />
     </>
   );
 }
