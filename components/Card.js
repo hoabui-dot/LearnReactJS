@@ -9,6 +9,10 @@ import {
   faPhone,
   faLocationDot,
   faPlus,
+  faF,
+  faDove,
+  faG,
+  faWifi,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Card = () => {
@@ -56,20 +60,30 @@ const Card = () => {
                 <a
                   href='https://www.facebook.com/profile.php?id=100015533373382'
                   className={styles.icon__fb}
-                ></a>
+                >
+                  f
+                </a>
                 <a
                   href='https://twitter.com/hoabui1907'
                   className={styles.icon__tw}
-                ></a>
+                >
+                  <FontAwesomeIcon icon={faDove} />
+                </a>
                 <a
                   href='https://contacts.google.com/?hl=vi'
                   className={styles.icon__gg}
-                ></a>
+                >
+                  <FontAwesomeIcon icon={faG} />
+                </a>
                 <a
                   href='https://www.linkedin.com/in/h%C3%B3a-b%C3%B9i-080768234/'
                   className={styles.icon__in}
-                ></a>
-                <a className={styles.icon__wf}></a>
+                >
+                  in
+                </a>
+                <a className={styles.icon__wf}>
+                  <FontAwesomeIcon icon={faWifi} />
+                </a>
               </div>
             </div>
             <div className={styles.triangle}></div>

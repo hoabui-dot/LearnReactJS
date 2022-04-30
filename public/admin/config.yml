@@ -27,3 +27,8 @@ collections:
           - label: "Featured Image"
             name: "background"
             widget: "image"
+      - label: "Description"
+        name: "Description"
+        file: "content/Description/Description.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }

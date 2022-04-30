@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import Image from "next/image";
 import { attributes } from "../content/Card/Card.md";
 // import ButtonScrollTop from "../../../../components/ButtonScrollTop/Button";
 import Card from "./Card";
@@ -33,7 +34,6 @@ const Banner = () => {
     <section id={styles.banner} className={styles.banner}>
       <nav
         id={styles.theMenu}
-        // className={toggleMenu ? "menu menu__open" : "menu"}
         className={`${styles.menu} ${toggleMenu ? styles.menu__open : ""}`}
       >
         <div className={styles.menu__wrap}>
@@ -131,10 +131,13 @@ const Banner = () => {
           </div>
         </div>
       </nav>
-      <div className='header__background'>
-        <img src={background} alt='BackGround Image' />
-      </div>
-      <Card />
+      <Image
+        src={background}
+        alt='BackGround Image'
+        layout='fill'
+        width={370}
+        className='banner__bg'
+      />
       {/* <ButtonScrollTop /> */}
     </section>
   );

@@ -1,16 +1,25 @@
 import fs from "fs";
 import matter from "gray-matter";
 import Head from "next/head";
+import Card from "../components/Card";
 import styles from "../styles/Home.module.scss";
 import Banner from "../components/Banner";
+import ChangeColor from "../components/ChangeColor";
+import Description from "../components/Description";
+import { useState } from "react";
 export default function Home() {
+  const [isColor, setIsColor] = useState(styles.green);
+
   return (
-    <>
+    <div id={styles.body} className={isColor}>
       <Head>
         <title>Demo Blog</title>
       </Head>
       <Banner />
-    </>
+      <Card />
+      <Description />
+      <ChangeColor setIsColor={setIsColor} />
+    </div>
   );
 }
 
