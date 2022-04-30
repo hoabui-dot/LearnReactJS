@@ -7,6 +7,7 @@ import Banner from "../components/Banner";
 import ChangeColor from "../components/ChangeColor";
 import Description from "../components/Description";
 import Education from "../components/Education";
+import Skills from "../components/Skills";
 import { useState } from "react";
 export default function Home() {
   const [isColor, setIsColor] = useState(styles.green);
@@ -20,6 +21,7 @@ export default function Home() {
       <Card />
       <Description />
       <Education />
+      <Skills />
       <ChangeColor setIsColor={setIsColor} />
     </div>
   );

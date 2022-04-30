@@ -93,7 +93,7 @@ const Education = () => {
   return (
     <section id={styles.education} className={styles.education}>
       <div className={styles.container}>
-        <TitleSection title='education' urlIcon={IconEdu} />
+        <TitleSection title='education' icon={IconEdu} />
         <FolderTree
           setState={setState}
           dataFolderTree={educationArray}

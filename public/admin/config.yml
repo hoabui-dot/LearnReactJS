@@ -9,13 +9,6 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "Home"
-        name: "home"
-        file: "content/header__background/header__background.md"
-        fields:
-          - label: "Featured Image"
-            name: "thumbnail"
-            widget: "image"
       - label: "Card"
         name: "card"
         file: "content/Card/Card.md"
@@ -65,3 +58,24 @@ collections:
           - { label: "Description6", name: "description6", widget: "text" }
           - { label: "Date6", name: "date6", widget: "text" }
           - { label: "Content6", name: "content6", widget: "text" }
+      - label: skills
+        name: skills
+        file: "content/Skills/Skills.md"
+        fields:
+          - { label: "Professional", name: "professional", widget: "string" }
+          - { label: "language1", name: "pro1", widget: "string" }
+          - { label: "language2", name: "pro2", widget: "string" }
+          - { label: "language3", name: "pro3", widget: "string" }
+          - { label: "language4", name: "pro4", widget: "string" }
+
+          - { label: "Personal", name: "personal", widget: "string" }
+          - { label: "language1", name: "per1", widget: "string" }
+          - { label: "language2", name: "per2", widget: "string" }
+          - { label: "language3", name: "per3", widget: "string" }
+          - { label: "language4", name: "per4", widget: "string" }
+
+          - { label: "Software", name: "software", widget: "string" }
+          - { label: "language1", name: "sof1", widget: "string" }
+          - { label: "language2", name: "sof2", widget: "string" }
+          - { label: "language3", name: "sof3", widget: "string" }
+          - { label: "language4", name: "sof4", widget: "string" }
