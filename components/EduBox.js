@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import "./EduBox.scss";
+import styles from "../styles/Home.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 
 export const SetHeight = React.createContext();
 
@@ -20,7 +22,9 @@ const EduBox = ({ eduData, flip, setState }) => {
   };
   return (
     <>
-      <div className={`${styles.eduBox__item} ${flip}`}>
+      <div
+        className={`${styles.eduBox__item} ${flip ? styles.eduBox__flip : ""}`}
+      >
         <div className={styles.item__content}>
           <div className={styles.eduBox__job}>
             <p className={styles.job__name}>{jobName}</p>
@@ -31,13 +35,19 @@ const EduBox = ({ eduData, flip, setState }) => {
               value='true'
               type='button'
               onClick={handleShowModal}
-              className={`item__more ${moreClassName}`}
+              className={`${styles.item__more} ${
+                moreClassName ? styles.block : ""
+              }`}
             >
-              <i className='fa-solid fa-ellipsis'></i>
+              <FontAwesomeIcon icon={faEllipsis} />
             </button>
           </div>
           <div className={styles.item__key}>
-            {keywords ? <span>{keywords}</span> : <i className={icon} />}
+            {keywords ? (
+              <span>{keywords}</span>
+            ) : (
+              <FontAwesomeIcon className={styles.icon} icon={icon} />
+            )}
           </div>
         </div>
       </div>
