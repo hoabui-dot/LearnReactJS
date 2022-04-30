@@ -62,20 +62,32 @@ collections:
         name: skills
         file: "content/Skills/Skills.md"
         fields:
-          - { label: "Professional", name: "professional", widget: "string" }
+          - { label: "FirstSkill", name: "professional", widget: "string" }
           - { label: "language1", name: "pro1", widget: "string" }
+          - { label: "Percent1", name: "proPercent1", widget: "number" }
           - { label: "language2", name: "pro2", widget: "string" }
+          - { label: "Percent2", name: "proPercent2", widget: "number" }
           - { label: "language3", name: "pro3", widget: "string" }
+          - { label: "Percent3", name: "proPercent3", widget: "number" }
           - { label: "language4", name: "pro4", widget: "string" }
+          - { label: "Percent4", name: "proPercent4", widget: "number" }
 
-          - { label: "Personal", name: "personal", widget: "string" }
+          - { label: "SecondSkill", name: "personal", widget: "string" }
           - { label: "language1", name: "per1", widget: "string" }
+          - { label: "Percent1", name: "perPercent1", widget: "number" }
           - { label: "language2", name: "per2", widget: "string" }
+          - { label: "Percent2", name: "perPercent2", widget: "number" }
           - { label: "language3", name: "per3", widget: "string" }
+          - { label: "Percent3", name: "perPercent3", widget: "number" }
           - { label: "language4", name: "per4", widget: "string" }
+          - { label: "Percent4", name: "perPercent4", widget: "number" }
 
-          - { label: "Software", name: "software", widget: "string" }
+          - { label: "ThirdSkill", name: "software", widget: "string" }
           - { label: "language1", name: "sof1", widget: "string" }
+          - { label: "Percent1", name: "sofPercent1", widget: "number" }
           - { label: "language2", name: "sof2", widget: "string" }
+          - { label: "Percent2", name: "sofPercent2", widget: "number" }
           - { label: "language3", name: "sof3", widget: "string" }
+          - { label: "Percent3", name: "sofPercent3", widget: "number" }
           - { label: "language4", name: "sof4", widget: "string" }
+          - { label: "Percent4", name: "sofPercent4", widget: "number" }
