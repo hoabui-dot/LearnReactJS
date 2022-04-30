@@ -17,7 +17,7 @@ collections:
             name: "thumbnail"
             widget: "image"
       - label: "Card"
-        name: "Card"
+        name: "card"
         file: "content/Card/Card.md"
         fields:
           - { label: "Name", name: "name", widget: "string" }
@@ -28,7 +28,7 @@ collections:
             name: "background"
             widget: "image"
       - label: "Description"
-        name: "Description"
+        name: "description"
         file: "content/Description/Description.md"
         fields:
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Description", name: "description", widget: "text" }
