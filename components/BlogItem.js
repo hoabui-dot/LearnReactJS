@@ -36,11 +36,12 @@ const BlogItem = ({ data, flip }) => {
           <p>
             <a className={styles.job__field} href='#'>
               {fieldWork}
-            </a>
+            </a>{" "}
+            /{" "}
             <a className={styles.job__name} href='#'>
               {jobName}
-            </a>
-            <span className={styles.job__working}>{work}</span>
+            </a>{" "}
+            / <span className={styles.job__working}> {work}</span>
           </p>
         </div>
         <div className={styles.description}>
