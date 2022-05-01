@@ -1,5 +1,5 @@
-import fs from "fs";
-import matter from "gray-matter";
+// import fs from "fs";
+// import matter from "gray-matter";
 import Head from "next/head";
 import Card from "../components/Card";
 import styles from "../styles/Home.module.scss";
@@ -13,6 +13,7 @@ import Experience from "../components/Experience";
 import Interest from "../components/Interest";
 import Pricing from "../components/Pricing";
 import Testimonials from "../components/Testimonials";
+import Blog from "../components/Blog";
 export default function Home() {
   const [isColor, setIsColor] = useState(styles.green);
 
@@ -30,29 +31,28 @@ export default function Home() {
       <Interest />
       <Pricing />
       <Testimonials />
+      <Blog />
       <ChangeColor setIsColor={setIsColor} />
     </div>
   );
 }
 
-export async function getStaticProps() {
-  // List of files in blogs folder
-  const filesInBlogs = fs.readdirSync("./content/blogs");
+// export async function getStaticProps() {
+//   const filesInBlogs = fs.readdirSync("./content/blogs");
 
-  // Get the front matter and slug (the filename without .md) of all files
-  const blogs = filesInBlogs.map(filename => {
-    const file = fs.readFileSync(`./content/blogs/${filename}`, "utf8");
-    const matterData = matter(file);
+//   const blogs = filesInBlogs.map(filename => {
+//     const file = fs.readFileSync(`./content/blogs/${filename}`, "utf8");
+//     const matterData = matter(file);
 
-    return {
-      ...matterData.data, // matterData.data contains front matter
-      slug: filename.slice(0, filename.indexOf(".")),
-    };
-  });
+//     return {
+//       ...matterData.data, // matterData.data contains front matter
+//       slug: filename.slice(0, filename.indexOf(".")),
+//     };
+//   });
 
-  return {
-    props: {
-      blogs,
-    },
-  };
-}
+//   return {
+//     props: {
+//       blogs,
+//     },
+//   };
+// }

@@ -1,44 +1,50 @@
 import React from "react";
+import styles from "../styles/Home.module.scss";
+import Image from "next/image";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faClock, faComment } from "@fortawesome/free-solid-svg-icons";
 
 const BlogItem = ({ data, flip }) => {
   const { image, fieldWork, jobName, work, workTitle, workDescription } = data;
   return (
-    <div className={`blog__item ${flip}`}>
-      <div className='item__image'>
+    <div className={`${styles.blog__item} ${flip}`}>
+      <div className={styles.item__image}>
         <figure>
           <img src={image} alt='Blog Images' />
-          <div className='image__infos'>
-            <div className='user'>
-              <i className='fa fa-user'></i> John Doe
+          <div className={styles.image__infos}>
+            <div className={styles.user}>
+              <FontAwesomeIcon icon={faUser} />
+              John Doe
             </div>
-            <div className='time'>
-              <i className='fa-solid fa-clock'></i> August 7, 2020
+            <div className={styles.time}>
+              <FontAwesomeIcon icon={faClock} />
+              August 7, 2020
             </div>
-            <div className='talk'>
-              <i className='fa-solid fa-comments'></i> 168
+            <div className={styles.talk}>
+              <FontAwesomeIcon icon={faComment} />
+              168
             </div>
           </div>
         </figure>
       </div>
-      <div className='item__content'>
-        <div className='job'>
+      <div className={styles.item__content}>
+        <div className={styles.job}>
           <p>
-            <a className='job__field' href='#'>
+            <a className={styles.job__field} href='#'>
               {fieldWork}
-            </a>{" "}
-            /{" "}
-            <a className='job__name' href='#'>
+            </a>
+            <a className={styles.job__name} href='#'>
               {jobName}
-            </a>{" "}
-            / <span className='job__working'>{work}</span>
+            </a>
+            <span className={styles.job__working}>{work}</span>
           </p>
         </div>
-        <div className='description'>
+        <div className={styles.description}>
           <p>{workTitle}</p>
           <p>{workDescription}</p>
         </div>
-        <div className='readMore'>
+        <div className={styles.readMore}>
           <Link to='#'>Read More</Link>
         </div>
       </div>
