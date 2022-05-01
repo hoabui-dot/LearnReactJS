@@ -312,3 +312,10 @@ collections:
           - label: "All Image 12"
             name: "allTabImg12"
             widget: "image"
+      - label: "More Info Education"
+        name: "moreInfo"
+        file: "content/MoreInfo/MoreInfo.md"
+        fields:
+          - label: "MoreInfo Image"
+            name: "infoImg"
+            widget: "image"

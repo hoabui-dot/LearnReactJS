@@ -3,7 +3,7 @@ import TitleSection from "./TitleSection";
 import IconEdu from "../public/uploads/book.png";
 import FolderTree from "./FolderTree";
 import { attributes } from "../content/Education/Education.md";
-// import MoreInfo from "./MoreInfo/MoreInfo";
+import MoreInfo from "./MoreInfo";
 import styles from "../styles/Home.module.scss";
 import {
   faGraduationCap,
@@ -99,7 +99,7 @@ const Education = () => {
           dataFolderTree={educationArray}
           tree='edu'
         />
-        {/* <MoreInfo state={state} setState={setState} /> */}
+        <MoreInfo state={state} setState={setState} />
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { attributes } from "@fortawesome/free-solid-svg-icons";
+import { attributes } from "../content/DribbleTab/DribbleTab.md";
 import DribbleTabItem from "./DribbleTabItem";
 import styles from "../styles/Home.module.scss";
 

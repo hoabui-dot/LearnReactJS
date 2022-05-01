@@ -7,6 +7,8 @@ import LogoTab from "./LogoTab";
 // import Popup from "./Popup";
 import PortfolioIcon from "../public/uploads/safe.png";
 import styles from "../styles/Home.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus, faAnglesUp } from "@fortawesome/free-solid-svg-icons";
 
 const Portfolio = () => {
   const [btn, setBtn] = useState(false); // set plus button in all slide
@@ -110,14 +112,14 @@ const Portfolio = () => {
           </div>
 
           {/* Plus Button at All Slide */}
-          <button
+          {/* <button
             onClick={handleVisible}
             className={
               filter !== "ALL" ? styles.hidden : styles.lightBox__visible
             }
           >
-            <i className={btn ? "fa-solid fa-angles-up" : "fa fa-plus"}></i>
-          </button>
+            <FontAwesomeIcon icon={btn ? faAnglesUp : faPlus} />
+          </button> */}
         </div>
 
         {/* <Popup
