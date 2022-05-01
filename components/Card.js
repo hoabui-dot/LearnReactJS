@@ -91,9 +91,11 @@ const Card = () => {
             <button className={styles.btn__plus}>
               <FontAwesomeIcon icon={faPlus} />
             </button>
-            <figure className={styles.avatar}>
-              <img src={thumbnail} alt='Avatar' />
-            </figure>
+            <div className={styles.avatar}>
+              <figure>
+                <Image src={thumbnail} alt='Avatar' layout='fill' />
+              </figure>
+            </div>
           </div>
         </div>
       </div>

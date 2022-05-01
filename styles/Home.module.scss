@@ -148,6 +148,26 @@
       margin-top: 65px;
       padding: unset;
     }
+
+    .avatar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 400px;
+      height: 100%;
+      margin: 0;
+    
+      @include md {
+        top: -22%;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
   }
 
   &__name {
@@ -299,25 +319,6 @@
 
   @include md {
     display: none;
-  }
-}
-.avatar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 400px;
-  height: 100%;
-  margin: 0;
-
-  @include md {
-    top: -22%;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    right: unset;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 .btn__plus {
