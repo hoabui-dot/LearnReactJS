@@ -1,46 +1,47 @@
 import React from "react";
+import styles from "../styles/Home.module.scss";
 
 const PricingItem = ({ data }) => {
   const { price, level, brandWidth, diskSpace, databases, domain, subdomain } =
     data;
   return (
-    <div className='animated pricing__item'>
-      <div className='item__top'>
-        <div className='price'>
-          <p className='price__text'>
+    <div className={styles.pricing__item}>
+      <div className={styles.item__top}>
+        <div className={styles.price}>
+          <p className={styles.price__text}>
             <span>$</span>
             <span>{price}</span>
             <span>/mo</span>
           </p>
         </div>
-        <div className='level'>
+        <div className={styles.level}>
           <span>{level}</span>
         </div>
       </div>
-      <div className='item__bottom'>
-        <div className='item__benefit'>
-          <div className='benefit__bw'>
+      <div className={styles.item__bottom}>
+        <div className={styles.item__benefit}>
+          <div className={styles.benefit__bw}>
             <span>{brandWidth}</span>
             <span> Brandwidth</span>
           </div>
-          <div className='benefit__ds'>
+          <div className={styles.benefit__ds}>
             <span>{diskSpace}</span>
             <span> Disk Space</span>
           </div>
-          <div className='benefit__database'>
+          <div className={styles.benefit__database}>
             <span>{databases}</span>
             <span> Databases</span>
           </div>
-          <div className='benefit__domain'>
+          <div className={styles.benefit__domain}>
             <span>{domain}</span>
             <span> Domain</span>
           </div>
-          <div className='benefit__subdomain'>
+          <div className={styles.benefit__subdomain}>
             <span>{subdomain}</span>
             <span> Subdomain</span>
           </div>
         </div>
-        <div className='item__button'>
+        <div className={styles.item__button}>
           <button type='button'>purchases</button>
         </div>
       </div>

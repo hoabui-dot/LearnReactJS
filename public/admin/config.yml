@@ -125,7 +125,7 @@ collections:
           - { label: "diskSpace1", name: "diskSpace1", widget: "text" }
           - { label: "databases1", name: "databases1", widget: "number" }
           - { label: "domain1", name: "domain1", widget: "text" }
-          - { label: "subdomain1", name: "subdomain1", widget: "text" }
+          - { label: "subdomain1", name: "a", widget: "text" }
 
           - { label: "Price2", name: "price2", widget: "number" }
           - { label: "Level2", name: "level2", widget: "text" }
@@ -142,3 +142,27 @@ collections:
           - { label: "databases3", name: "databases3", widget: "number" }
           - { label: "domain3", name: "domain3", widget: "text" }
           - { label: "subdomain3", name: "subdomain3", widget: "text" }
+      - label: "Pricing"
+        name: "pricing"
+        file: "content/Pricing/Pricing.md"
+        fields:
+          - label: "Avatar Image 1"
+              name: "avatar1"
+              widget: "image"
+          - { label: "Description 1", name: "description1", widget: "text" }
+          - { label: "Author 1", name: "author1", widget: "text" }
+
+          - label: "Avatar Image 2"
+              name: "avatar2"
+              widget: "image"
+          - { label: "Description 2", name: "description2", widget: "text" }
+          - { label: "Author 2", name: "author2", widget: "text" }
+
+          - label: "Avatar Image 3"
+              name: "avatar3"
+              widget: "image"
+          - { label: "Description 3", name: "description3", widget: "text" }
+          - { label: "Author 3", name: "author3", widget: "text" }
+
+          
+
