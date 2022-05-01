@@ -13,7 +13,7 @@ const DribbleTab = ({ setClickImg, setValuePopup }) => {
           <DribbleTabItem
             setValuePopup={setValuePopup}
             setClickImg={setClickImg}
-            image={DribbleTabImg1}
+            image={dribbleTabImg1}
             title='image'
             description='two hover effect for portfolio grid blocks. its scale'
             value='1'
@@ -21,7 +21,7 @@ const DribbleTab = ({ setClickImg, setValuePopup }) => {
           <DribbleTabItem
             setValuePopup={setValuePopup}
             setClickImg={setClickImg}
-            image={DribbleTabImg2}
+            image={dribbleTabImg2}
             title='image'
             description='i designed this for a client for his cafe'
             value='4'
@@ -29,7 +29,7 @@ const DribbleTab = ({ setClickImg, setValuePopup }) => {
           <DribbleTabItem
             setValuePopup={setValuePopup}
             setClickImg={setClickImg}
-            image={DribbleTabImg3}
+            image={dribbleTabImg3}
             title='image'
             description='two hover effect for portfolio grid blocks. its scale'
             value='5'
