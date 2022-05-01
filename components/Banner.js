@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import Image from "next/image";
 import { attributes } from "../content/Card/Card.md";
-// import ButtonScrollTop from "../../../../components/ButtonScrollTop/Button";
-import Card from "./Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import ButtonScrollTop from "../../../../components/ButtonScrollTop/Button";
 import styles from "../styles/Home.module.scss";
 import {
   faMinus,
@@ -38,7 +37,7 @@ const Banner = () => {
       >
         <div className={styles.menu__wrap}>
           <div className={styles.logo__flat}>
-            <img
+            <Image
               alt='personal logo'
               className={styles.img__responsive}
               src={thumbnail}

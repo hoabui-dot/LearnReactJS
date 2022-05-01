@@ -105,7 +105,7 @@
     align-items: center;
 
     .titleImg {
-      padding: 5px;
+      padding: 6px 10px;
       @extend .box__shadow;
     }
 
@@ -912,4 +912,100 @@
 }
 .block {
   display: block;
+}
+
+//=========================Skills======================
+
+.skills {
+  &__wrap {
+    width: 100%;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+    padding-bottom: 65px;
+    margin-top: 35px;
+    @include md {
+      flex-direction: column;
+    }
+
+    div {
+      &:not(:first-child) {
+        margin-left: 30px;
+
+        @include md {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .field {
+    width: 277px;
+    @include desktop__big {
+      width: 195px;
+    }
+    @include md {
+      width: 100%;
+      padding: 0 40px;
+      &:not(:first-child) {
+        margin-top: 50px;
+      }
+    }
+
+    &__title {
+      font-size: 20px;
+      text-align: center;
+      text-transform: capitalize;
+
+      p {
+        margin: 0;
+        @extend .text__shadow;
+      }
+    }
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+  }
+
+  .item {
+    &__subTitle {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      font-weight: normal;
+      @include font-size(14);
+
+      .subTitle__percent {
+        @include font-size(14);
+        font-family: 'mulish';
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: 35px;
+        height: 4px;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    &__percent {
+      position: absolute;
+      height: 4px;
+      top: 35px;
+      left: -29px;
+      background-color: #fff;
+
+      @include md {
+        left: 0;
+      }
+    }
+  }
 }

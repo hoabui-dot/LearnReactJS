@@ -1,5 +1,6 @@
 import React from "react";
 import { attributes } from "../content/Card/Card.md";
+import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

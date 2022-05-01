@@ -9,6 +9,7 @@ import Description from "../components/Description";
 import Education from "../components/Education";
 import Skills from "../components/Skills";
 import { useState } from "react";
+import Experience from "../components/Experience";
 export default function Home() {
   const [isColor, setIsColor] = useState(styles.green);
 
@@ -22,6 +23,7 @@ export default function Home() {
       <Description />
       <Education />
       <Skills />
+      <Experience />
       <ChangeColor setIsColor={setIsColor} />
     </div>
   );

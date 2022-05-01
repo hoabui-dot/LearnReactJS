@@ -12,7 +12,7 @@ const TitleSection = ({ icon, title }) => {
             width={45}
             height={45}
             alt='Icon Title Section'
-            style={{ marginBottom: "-3px" }}
+            style={{ paddingTop: "5px" }}
           />
         </div>
         <span>{title}</span>

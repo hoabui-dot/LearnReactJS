@@ -2,8 +2,8 @@ import React from "react";
 import Field from "./SkillsField";
 import TitleSection from "./TitleSection";
 import SkillsIcon from "../public/uploads/mixer.png";
-import styles from "../styles/Home.module.scss";
 import { attributes } from "../content/Skills/Skills.md";
+import styles from "../styles/Home.module.scss";
 
 const Skills = () => {
   const {

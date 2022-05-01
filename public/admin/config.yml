@@ -91,3 +91,26 @@ collections:
           - { label: "Percent3", name: "sofPercent3", widget: "number" }
           - { label: "language4", name: "sof4", widget: "string" }
           - { label: "Percent4", name: "sofPercent4", widget: "number" }
+      - label: "Experience"
+        name: "experience"
+        file: "content/Experience/Experience.md"
+        fields:
+          - { label: "Title1", name: "title1", widget: "string" }
+          - { label: "Description1", name: "description1", widget: "text" }
+          - { label: "Date1", name: "date1", widget: "text" }
+          - { label: "Content1", name: "content1", widget: "text" }
+
+          - { label: "Title2", name: "title2", widget: "string" }
+          - { label: "Description2", name: "description2", widget: "text" }
+          - { label: "Date2", name: "date2", widget: "text" }
+          - { label: "Content2", name: "content2", widget: "text" }
+
+          - { label: "Title3", name: "title3", widget: "string" }
+          - { label: "Description3", name: "description3", widget: "text" }
+          - { label: "Date3", name: "date3", widget: "text" }
+          - { label: "Content3", name: "content3", widget: "text" }
+
+          - { label: "Title4", name: "title4", widget: "string" }
+          - { label: "Description4", name: "description4", widget: "text" }
+          - { label: "Date4", name: "date4", widget: "text" }
+          - { label: "Content4", name: "content4", widget: "text" }
