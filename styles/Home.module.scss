@@ -691,7 +691,7 @@
     flex-direction: column;
   }
 
-  &__tree {
+  &__edu {
     position: absolute;
     height: 610px;
     top: 50px;
@@ -715,18 +715,24 @@
     @include md {
       left: 50%;
     }
-    .tree__exp {
-      height: 350px;
-      top: unset;
-      margin-top: 30px;
+  }
 
-      @include desktop__big {
-        height: 450px;
-      }
+  &__exp {
+    position: absolute;
+    height: 350px;
+    left: 482px;
+    width: 5px;
+    background-color: var(--main-color);
+    opacity: 0.4;
+    top: unset;
+    margin-top: 30px;
 
-      @include md {
-        height: 600px;
-      }
+    @include desktop__big {
+      height: 450px;
+    }
+
+    @include md {
+      height: 600px;
     }
   }
 }
@@ -1006,6 +1012,50 @@
       @include md {
         left: 0;
       }
+    }
+  }
+}
+
+//=========================Interest=========================
+.interest__wrap {
+  background-color: #fff;
+  margin-top: 35px;
+  @extend .box__shadow;
+}
+.wrap__content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  min-height: 145px;
+  padding: 45px;
+  font-size: 15px;
+  color: $dark;
+  text-align: center;
+  line-height: 22px;
+}
+.enjoy {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+
+    @include desktop__big {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    @include custom__sp {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    i {
+      font-size: 35.2px;
     }
   }
 }

@@ -6,7 +6,11 @@ const FolderTree = ({ tree, dataFolderTree, setState }) => {
   return (
     <>
       <div className={styles.folderTree}>
-        <div className={styles.folderTree__tree}></div>
+        <div
+          className={`${
+            tree === "exp" ? styles.folderTree__exp : styles.folderTree__edu
+          }`}
+        ></div>
         <div className={styles.folderTree__list}>
           {dataFolderTree &&
             !!dataFolderTree &&

@@ -66,7 +66,7 @@ const Experience = () => {
   return (
     <section id={styles.experience} className={styles.experience}>
       <div className={styles.container}>
-        <TitleSection title='experience' urlIcon={ExpIcon} />
+        <TitleSection title='experience' icon={ExpIcon} />
         <FolderTree
           setState={setState}
           dataFolderTree={experienceArray}
