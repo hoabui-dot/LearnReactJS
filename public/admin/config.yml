@@ -191,3 +191,33 @@ collections:
           - label: "Logo 9"
             name: "logo9"
             widget: "image"
+      - label: "Blog"
+        name: "blog"
+        file: "content/Blog/Blog.md"
+        fields:
+          - label: "Blog Image 1"
+            name: "blogImg1"
+            widget: "image"
+          - { label: "fieldWork 1", name: "text1", widget: "string" }
+          - { label: "JobName 1", name: "jobName1", widget: "string" }
+          - { label: "Work 1", name: "work1", widget: "string" }
+          - { label: "Work Title 1", name: "workTitle1", widget: "string" }
+          - { label: "Description 1", name: "description1", widget: "text" }
+
+          - label: "Blog Image 2"
+            name: "blogImg2"
+            widget: "image"
+          - { label: "fieldWork 2", name: "text2", widget: "string" }
+          - { label: "JobName 2", name: "jobName2", widget: "string" }
+          - { label: "Work 2", name: "work2", widget: "string" }
+          - { label: "Work Title 2", name: "workTitle2", widget: "string" }
+          - { label: "Description 2", name: "description2", widget: "text" }
+
+          - label: "Blog Image 3"
+            name: "blogImg3"
+            widget: "image"
+          - { label: "fieldWork 3", name: "text3", widget: "string" }
+          - { label: "JobName 3", name: "jobName3", widget: "string" }
+          - { label: "Work 3", name: "work3", widget: "string" }
+          - { label: "Work Title 3", name: "workTitle3", widget: "string" }
+          - { label: "Description 3", name: "description3", widget: "text" }
