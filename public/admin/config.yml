@@ -319,3 +319,4 @@ collections:
           - label: "MoreInfo Image"
             name: "infoImg"
             widget: "image"
+          - { label: "MoreInfo Description", name: "desc", widget: "text" }

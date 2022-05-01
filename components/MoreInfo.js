@@ -1,12 +1,11 @@
 import React from "react";
 import styles from "../styles/Home.module.scss";
-import Image from "../public/uploads/more-infos.jpg";
 import { attributes } from "../content/MoreInfo/MoreInfo.md";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 const MoreInfo = ({ setState, state }) => {
-  const { infoImg } = attributes;
+  const { infoImg, desc } = attributes;
 
   const handleClick = e => {
     if (e.target.id === "id01") {
@@ -37,7 +36,8 @@ const MoreInfo = ({ setState, state }) => {
             <img src={infoImg} alt='More Info Image' />
           </figure>
           <p className={styles.more__description}>
-            I have learned a great many things from participating in varsity
+            {desc}
+            {/* I have learned a great many things from participating in varsity
             football. It has changed my entire outlook on and attitude toward
             life. Before my freshman year at [high-school], I was shy, had low
             self-esteem and turned away from seemingly impossible challenges.
@@ -51,7 +51,7 @@ const MoreInfo = ({ setState, state }) => {
             did not want the responsibility of helping the team because I was
             too afraid of making a mistake. That aspect of my character led the
             first years of my high school life. All the while, I went to
-            practice.
+            practice. */}
           </p>
         </div>
       </div>
