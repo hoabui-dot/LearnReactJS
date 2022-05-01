@@ -22,6 +22,18 @@ import "swiper/css/pagination";
 import styles from "../styles/Home.module.scss";
 
 const Testimonials = () => {
+  const {
+    avatar1,
+    description1,
+    author1,
+    avatar2,
+    description2,
+    author2,
+    avatar3,
+    description3,
+    author3,
+  } = attributes;
+
   return (
     <section id={styles.testimonial} className={styles.testimonial}>
       <div className={styles.container}>
