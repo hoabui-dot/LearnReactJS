@@ -142,9 +142,9 @@ collections:
           - { label: "databases3", name: "databases3", widget: "number" }
           - { label: "domain3", name: "domain3", widget: "text" }
           - { label: "subdomain3", name: "subdomain3", widget: "text" }
-      - label: "Pricing"
-        name: "pricing"
-        file: "content/Pricing/Pricing.md"
+      - label: "Testimonial"
+        name: "testimonial"
+        file: "content/Testimonial/Testimonial.md"
         fields:
           - label: "Avatar Image 1"
             name: "avatar1"
