@@ -10,6 +10,7 @@ import Education from "../components/Education";
 import Skills from "../components/Skills";
 import { useState } from "react";
 import Experience from "../components/Experience";
+import Portfolio from "../components/Portfolio";
 import Interest from "../components/Interest";
 import Pricing from "../components/Pricing";
 import Testimonials from "../components/Testimonials";
@@ -29,6 +30,7 @@ export default function Home() {
       <Education />
       <Skills />
       <Experience />
+      <Portfolio />
       <Interest />
       <Pricing />
       <Testimonials />

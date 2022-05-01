@@ -45,14 +45,14 @@ const Testimonials = () => {
           >
             <SwiperSlide>
               <div className={styles.item}>
-                <figure className={styles.item__image}>
+                <div className={styles.item__image}>
                   <Image
                     src={avatar1}
                     alt='Item Image'
                     width={130}
                     height={130}
                   />
-                </figure>
+                </div>
                 <div className={styles.item__content}>
                   <p>{description1}</p>
                   <p>{author1}</p>
