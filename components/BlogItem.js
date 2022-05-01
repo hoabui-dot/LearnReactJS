@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "../styles/Home.module.scss";
-import Image from "next/image";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faClock, faComment } from "@fortawesome/free-solid-svg-icons";
 
@@ -45,7 +43,7 @@ const BlogItem = ({ data, flip }) => {
           <p>{workDescription}</p>
         </div>
         <div className={styles.readMore}>
-          <Link to='#'>Read More</Link>
+          <a href='#'>Read More</a>
         </div>
       </div>
     </div>
