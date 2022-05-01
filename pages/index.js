@@ -14,6 +14,7 @@ import Interest from "../components/Interest";
 import Pricing from "../components/Pricing";
 import Testimonials from "../components/Testimonials";
 import Blog from "../components/Blog";
+import Contact from "../components/Contact";
 export default function Home() {
   const [isColor, setIsColor] = useState(styles.green);
 
@@ -32,6 +33,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <Blog />
+      <Contact />
       <ChangeColor setIsColor={setIsColor} />
     </div>
   );
