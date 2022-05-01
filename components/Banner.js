@@ -134,7 +134,6 @@ const Banner = () => {
         src={background}
         alt='BackGround Image'
         layout='fill'
-        width={370}
         className='banner__bg'
       />
       {/* <ButtonScrollTop /> */}

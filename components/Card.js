@@ -17,7 +17,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Card = () => {
-  const { thumbnail } = attributes;
+  const { thumbnail, name } = attributes;
 
   return (
     <section className={styles.card}>
@@ -25,7 +25,7 @@ const Card = () => {
         <div className={styles.card__wrap}>
           <div className={styles.card__content}>
             <div className={styles.card__name}>
-              <h4>bui van hoa</h4>
+              <h4>{name}</h4>
               <h6>Software Engineer & UI/UX Expert</h6>
             </div>
             <div className={styles.card__infos}>

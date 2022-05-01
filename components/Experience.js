@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TitleSection from "./TitleSection";
 import ExpIcon from "../public/uploads/layers.png";
 import FolderTree from "./FolderTree";
-// import MoreInfoExp from "./MoreInfoExp/MoreInfoExp";
+import MoreInfoExp from "./MoreInfoExp";
 import { attributes } from "../content/Experience/Experience.md";
 import styles from "../styles/Home.module.scss";
 
@@ -72,7 +72,7 @@ const Experience = () => {
           dataFolderTree={experienceArray}
           tree='exp'
         />
-        {/* <MoreInfoExp state={state} setState={setState} /> */}
+        <MoreInfoExp state={state} setState={setState} />
       </div>
     </section>
   );
