@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/Home.module.scss";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faClock, faComment } from "@fortawesome/free-solid-svg-icons";
 
@@ -9,7 +10,11 @@ const BlogItem = ({ data, flip }) => {
     <div className={`${styles.blog__item} ${flip}`}>
       <div className={styles.item__image}>
         <figure>
-          <img src={image} alt='Blog Images' />
+          <div className='image__blog'>
+            <figure>
+              <Image src={image} alt='Blog Images' layout='fill' />
+            </figure>
+          </div>
           <div className={styles.image__infos}>
             <div className={styles.user}>
               <FontAwesomeIcon icon={faUser} />
