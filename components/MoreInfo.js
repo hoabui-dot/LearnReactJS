@@ -13,7 +13,7 @@ const MoreInfo = ({ setState, state }) => {
       setState(false);
     }
   };
-
+  //Hoabui
   const handleCloseClick = () => {
     document.body.style.overflow = "unset";
     setState(false);
