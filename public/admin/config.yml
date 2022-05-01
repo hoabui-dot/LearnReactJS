@@ -164,15 +164,33 @@ collections:
           - { label: "Description 3", name: "description3", widget: "text" }
           - { label: "Author 3", name: "author3", widget: "text" }
 
-          - {label: "Logo 1", name: "logo1", widget: "image"}
-          - {label: "Logo 2", name: "logo2", widget: "image"}
-          - {label: "Logo 3", name: "logo3", widget: "image"}
-          - {label: "Logo 4", name: "logo4", widget: "image"}
-          - {label: "Logo 5", name: "logo5", widget: "image"}
-          - {label: "Logo 6", name: "logo6", widget: "image"}
-          - {label: "Logo 7", name: "logo7", widget: "image"}
-          - {label: "Logo 8", name: "logo8", widget: "image"}
-          - {label: "Logo 9", name: "logo9", widget: "image"}
+          - label: "Logo 1"
+              name: "logo1"
+              widget: "image"
+          - label: "Logo 2" 
+              name: "logo2" 
+              widget: "image"
+          - label: "Logo 3" 
+              name: "logo3" 
+              widget: "image"
+          - label: "Logo 4" 
+              name: "logo4" 
+              widget: "image"
+          - label: "Logo 5"
+              name: "logo5" 
+              widget: "image"
+          - label: "Logo 6" 
+              name: "logo6" 
+              widget: "image"
+          - label: "Logo 7"
+              name: "logo7" 
+              widget: "image"
+          - label: "Logo 8"
+              name: "logo8"
+              widget: "image"
+          - label: "Logo 9" 
+              name: "logo9" 
+              widget: "image"
 
 
           
