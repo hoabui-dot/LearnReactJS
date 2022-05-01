@@ -3,19 +3,7 @@ import TitleSection from "./TitleSection";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import { attributes } from "../content/Testimonial/Testimonial.md";
-import client1 from "../public/uploads/client-1.png";
-import client2 from "../public/uploads/client-2.png";
-import client3 from "../public/uploads/client-3.png";
 import handShake from "../public/uploads/handshake.png";
-import logo1 from "../public/uploads/logo1.png";
-import logo2 from "../public/uploads/logo2.png";
-import logo3 from "../public/uploads/logo3.png";
-import logo4 from "../public/uploads/logo4.png";
-import logo5 from "../public/uploads/logo5.png";
-import logo6 from "../public/uploads/logo6.png";
-import logo7 from "../public/uploads/logo7.png";
-import logo8 from "../public/uploads/logo8.png";
-import logo9 from "../public/uploads/logo9.png";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -32,6 +20,15 @@ const Testimonials = () => {
     avatar3,
     description3,
     author3,
+    logo1,
+    logo2,
+    logo3,
+    logo4,
+    logo5,
+    logo6,
+    logo7,
+    logo8,
+    logo9,
   } = attributes;
 
   return (
@@ -50,25 +47,15 @@ const Testimonials = () => {
               <div className={styles.item}>
                 <figure className={styles.item__image}>
                   <Image
-                    src={client1}
+                    src={avatar1}
                     alt='Item Image'
                     width={130}
                     height={130}
                   />
                 </figure>
                 <div className={styles.item__content}>
-                  <p>
-                    I work with John on several web development projects and I
-                    find him to be extremely creative and a technical Front End
-                    Developer. Jone expertise involves building complex
-                    Responsive Design layouts using HTML 5, CSS3, and
-                    JavaScript. I work with John on several web development
-                    projects and I find him to be extremely creative and a
-                    technical Front End Developer. Jone expertise involves
-                    building complex Responsive Design layouts using HTML 5,
-                    CSS3, and JavaScript.
-                  </p>
-                  <p>Mike, CEO, IT World.</p>
+                  <p>{description1}</p>
+                  <p>{author1}</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -76,19 +63,15 @@ const Testimonials = () => {
               <div className={styles.item}>
                 <figure className={styles.item__image}>
                   <Image
-                    src={client2}
+                    src={avatar2}
                     alt='Item Image'
                     width={130}
                     height={130}
                   />
                 </figure>
                 <div className={styles.item__content}>
-                  <p>
-                    I work with John on several web development projects and I
-                    find him to be extremely creative and a technical Front End
-                    Developer.
-                  </p>
-                  <p>Mike, CEO, IT World.</p>
+                  <p>{description2}</p>
+                  <p>{author2}</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -96,21 +79,15 @@ const Testimonials = () => {
               <div className={styles.item}>
                 <figure className={styles.item__image}>
                   <Image
-                    src={client3}
+                    src={avatar3}
                     alt='Item Image'
                     width={130}
                     height={130}
                   />
                 </figure>
                 <div className={styles.item__content}>
-                  <p>
-                    I work with John on several web development projects and I
-                    find him to be extremely creative and a technical Front End
-                    Developer. Jone expertise involves building complex
-                    Responsive Design layouts using HTML 5, CSS3, and
-                    JavaScript.
-                  </p>
-                  <p>Mike, CEO, IT World.</p>
+                  <p>{description3}</p>
+                  <p>{author3}</p>
                 </div>
               </div>
             </SwiperSlide>
