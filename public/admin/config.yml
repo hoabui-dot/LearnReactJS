@@ -123,7 +123,7 @@ collections:
           - { label: "Level1", name: "level1", widget: "text" }
           - { label: "brandWidth1", name: "brandWidth1", widget: "text" }
           - { label: "diskSpace1", name: "diskSpace1", widget: "text" }
-          - { label: "databases1", name: "databases1", widget: "text" }
+          - { label: "databases1", name: "databases1", widget: "number" }
           - { label: "domain1", name: "domain1", widget: "text" }
           - { label: "subdomain1", name: "subdomain1", widget: "text" }
 
@@ -131,7 +131,7 @@ collections:
           - { label: "Level2", name: "level2", widget: "text" }
           - { label: "brandWidth2", name: "brandWidth2", widget: "text" }
           - { label: "diskSpace2", name: "diskSpace2", widget: "text" }
-          - { label: "databases2", name: "databases2", widget: "text" }
+          - { label: "databases2", name: "databases2", widget: "number" }
           - { label: "domain2", name: "domain2", widget: "text" }
           - { label: "subdomain2", name: "subdomain2", widget: "text" }
 
@@ -139,6 +139,6 @@ collections:
           - { label: "Level3", name: "level3", widget: "text" }
           - { label: "brandWidth3", name: "brandWidth3", widget: "text" }
           - { label: "diskSpace3", name: "diskSpace3", widget: "text" }
-          - { label: "databases3", name: "databases3", widget: "text" }
+          - { label: "databases3", name: "databases3", widget: "number" }
           - { label: "domain3", name: "domain3", widget: "text" }
           - { label: "subdomain3", name: "subdomain3", widget: "text" }
