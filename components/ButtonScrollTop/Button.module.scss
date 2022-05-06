@@ -1,0 +1,27 @@
+@import '../../App.module.scss';
+@import '../../index.module.scss';
+
+.btnScroll {
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    bottom: 21px;
+    right: 18px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--secondary-color);
+    font-size: 22px;
+    transition: 0.3s;
+    color: white;
+    padding: 10px 14px;
+    z-index: 2000;
+    @extend .box__shadow;
+
+    i {
+        cursor: pointer;
+    }
+
+    &.active {
+        display: block;
+    }
+}

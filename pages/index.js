@@ -1,28 +1,28 @@
 import fs from "fs";
 import matter from "gray-matter";
 import Head from "next/head";
-import Card from "../components/Card";
+import Card from "../components/Card/Card";
 import styles from "../styles/Home.module.scss";
-import Banner from "../components/Banner";
-import ChangeColor from "../components/ChangeColor";
-import Description from "../components/Description";
-import Education from "../components/Education";
-import Skills from "../components/Skills";
+import Banner from "../components/Banner/Banner";
+import ChangeColor from "../components/ChangeColor/ChangeColor";
+import Description from "../components/Description/Description";
+import Education from "../components/FolderTree/Education/Education";
+import Skills from "../components/Skills/Skills";
 import { useState } from "react";
-import Experience from "../components/Experience";
-import Portfolio from "../components/Portfolio";
-import Interest from "../components/Interest";
-import Pricing from "../components/Pricing";
-import Testimonials from "../components/Testimonials";
-import Blog from "../components/Blog";
-import Contact from "../components/Contact";
+import Experience from "../components/FolderTree/Experience/Experience";
+import Portfolio from "../components/Portfolio/Portfolio";
+import Interest from "../components/Interest/Interest";
+import Pricing from "../components/Pricing/Pricing";
+import Testimonials from "../components/Testimonials/Testimonials";
+import Blog from "../components/Blog/Blog";
+import Contact from "../components/Contact/Contact";
 export default function Home() {
   const [isColor, setIsColor] = useState(styles.green);
 
   return (
     <div id={styles.body} className={isColor}>
       <Head>
-        <title>Demo Blog</title>
+        <title>CV ReactJS</title>
       </Head>
       <Banner />
       <Card />

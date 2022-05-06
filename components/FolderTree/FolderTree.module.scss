@@ -1,0 +1,63 @@
+@import '../../App.module.scss';
+@import '../../index.module.scss';
+
+.folderTree {
+    position: relative;
+    margin-top: 30px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__edu {
+        position: absolute;
+        height: 650px;
+        top: 50px;
+        left: 482px;
+        width: 5px;
+        background-color: var(--main-color);
+        opacity: 0.4;
+
+        @include desktop__big {
+            height: 800px;
+        }
+
+        @include md {
+            height: 1000px;
+        }
+
+        @include desktop__big {
+            left: 354px;
+        }
+
+        @include md {
+            left: 50%;
+        }
+    }
+
+    &__exp {
+        position: absolute;
+        height: 350px;
+        left: 482px;
+        width: 5px;
+        background-color: var(--main-color);
+        opacity: 0.4;
+        top: unset;
+        margin-top: 30px;
+
+        @include desktop__big {
+            height: 450px;
+        }
+
+        @include md {
+            height: 600px;
+        }
+    }
+
+    .btn__more {
+        cursor: pointer;
+        @include font-size(22);
+        color: #19762d;
+    }
+}

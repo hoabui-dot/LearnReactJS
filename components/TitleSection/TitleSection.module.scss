@@ -1,0 +1,29 @@
+@import '../../App.module.scss';
+@import '../../index.module.scss';
+
+.title {
+    margin-top: 68px;
+    text-align: center;
+    @include font-size(32);
+    color: $dark;
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            color: #1abc9c;
+            padding: 13px;
+            @extend .box__shadow;
+        }
+        img {
+            max-width: 72px;
+            padding: 13px;
+            @extend .box__shadow;
+        }
+        span {
+            font-weight: bolder;
+            margin-left: 10px;
+            text-transform: uppercase;
+        }
+    }
+}
