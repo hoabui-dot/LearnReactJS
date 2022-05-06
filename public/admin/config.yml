@@ -41,3 +41,95 @@ collections:
               - label: "Header Background"
                 name: "bg"
                 widget: "image"
+
+          - label: "Blog"
+            name: "blog"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Blog Item 1"
+                name: "blogItem1"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - label: "Blog Image"
+                    name: "blogImg"
+                    widget: "image"
+
+                  - label: "field Work"
+                    name: "fieldWork"
+                    widget: "text"
+
+                  - label: "Job Name"
+                    name: "jobName"
+                    widget: "string"
+
+                  - label: "Work"
+                    name: "work"
+                    widget: "string"
+
+                  - label: "Work Title"
+                    name: "workTitle"
+                    widget: "string"
+
+                  - label: "Description"
+                    name: "desc"
+                    widget: "text"
+
+              - label: "Blog Item 2"
+                name: "blogItem2"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - label: "Blog Image"
+                    name: "blogImg"
+                    widget: "image"
+
+                  - label: "field Work"
+                    name: "fieldWork"
+                    widget: "text"
+
+                  - label: "Job Name"
+                    name: "jobName"
+                    widget: "string"
+
+                  - label: "Work"
+                    name: "work"
+                    widget: "string"
+
+                  - label: "Work Title"
+                    name: "workTitle"
+                    widget: "string"
+
+                  - label: "Description"
+                    name: "desc"
+                    widget: "text"
+
+              - label: "Blog Item 3"
+                name: "blogItem3"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - label: "Blog Image"
+                    name: "blogImg"
+                    widget: "image"
+
+                  - label: "field Work"
+                    name: "fieldWork"
+                    widget: "text"
+
+                  - label: "Job Name"
+                    name: "jobName"
+                    widget: "string"
+
+                  - label: "Work"
+                    name: "work"
+                    widget: "string"
+
+                  - label: "Work Title"
+                    name: "workTitle"
+                    widget: "string"
+
+                  - label: "Description"
+                    name: "desc"
+                    widget: "text"

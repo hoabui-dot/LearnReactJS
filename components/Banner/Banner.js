@@ -37,7 +37,11 @@ const Banner = () => {
       >
         <div className={styles.menu__wrap}>
           <div className={styles.logo__flat}>
-            <img alt='personal logo' className='img__responsive' src={banner} />
+            <img
+              alt='personal logo'
+              className='img__responsive'
+              src={banner.avatar}
+            />
           </div>
           <br />
           <Link to='banner' spy={true} smooth={true} duration={500}>
@@ -125,7 +129,7 @@ const Banner = () => {
         </div>
       </nav>
       <figure className={styles.header__background}>
-        <img src={banner} alt='Header Background' />
+        <img src={banner.bg} alt='Header Background' />
       </figure>
       <ButtonScrollTop />
     </section>

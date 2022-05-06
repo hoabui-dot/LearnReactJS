@@ -6,21 +6,6 @@
   background-color: $background;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-  max-width: 970px;
-  margin: 0 auto;
-
-  @include desktop__big {
-    max-width: 720px;
-  }
-
-  @include md {
-    padding: 0 15px;
-  }
-}
-
 @keyframes fadeUpBanner {
   0% {
     transform: translateX(-30px) scale(0.7);
