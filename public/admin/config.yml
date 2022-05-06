@@ -29,3 +29,15 @@ collections:
               - label: "Avatar"
                 name: "avtCard"
                 widget: "image"
+          - label: "Banner"
+            name: "banner"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Avatar Menu"
+                name: "avatar"
+                widget: "image"
+
+              - label: "Header Background"
+                name: "bg"
+                widget: "image"

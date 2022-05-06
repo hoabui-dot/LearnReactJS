@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import Image from "next/image";
-import { attributes } from "../../content/Card/Card.md";
+import { attributes } from "../../content/Home.md";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ButtonScrollTop from "../ButtonScrollTop/Button";
 import styles from "./Banner.module.scss";
@@ -21,7 +21,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Banner = () => {
-  const { thumbnail, background } = attributes;
+  const { banner } = attributes;
 
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -37,12 +37,10 @@ const Banner = () => {
       >
         <div className={styles.menu__wrap}>
           <div className={styles.logo__flat}>
-            <Image
+            <img
               alt='personal logo'
-              className={styles.img__responsive}
-              src={thumbnail}
-              width={225}
-              height={225}
+              className='img__responsive'
+              src={banner.avatar}
             />
           </div>
           <br />
@@ -130,12 +128,9 @@ const Banner = () => {
           </div>
         </div>
       </nav>
-      <Image
-        src={background}
-        alt='BackGround Image'
-        layout='fill'
-        className='banner__bg'
-      />
+      <figure className={styles.header__background}>
+        <img src={banner.bg} alt='Header Background' />
+      </figure>
       <ButtonScrollTop />
     </section>
   );
