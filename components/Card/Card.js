@@ -16,7 +16,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Card = () => {
-  const { thumbnail, name } = attributes;
+  const { avtCard, yourName, yourJob } = attributes;
 
   return (
     <section className={styles.card}>
@@ -24,8 +24,8 @@ const Card = () => {
         <div className={styles.card__wrap}>
           <div className={styles.card__content}>
             <div className={styles.card__name}>
-              <h4>{name}</h4>
-              <h6>Software Engineer & UI/UX Expert</h6>
+              <h4>{yourName}</h4>
+              <h6>{yourJob}</h6>
             </div>
             <div className={styles.card__infos}>
               <div className={styles.infos__list}>
@@ -91,7 +91,7 @@ const Card = () => {
               <FontAwesomeIcon icon={faPlus} />
             </button>
             <figure className={styles.avatar}>
-              <img src={thumbnail} alt='Avatar' />
+              <img src={avtCard} alt='Avatar' />
             </figure>
           </div>
         </div>
