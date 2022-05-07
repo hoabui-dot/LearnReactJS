@@ -49,7 +49,7 @@ collections:
             fields:
               - label: "Blog Item 1"
                 name: "blogItem1"
-                widget: "object"
+                widget: "list"
                 collapsed: true
                 fields:
                   - label: "Blog Image"
@@ -78,7 +78,7 @@ collections:
 
               - label: "Blog Item 2"
                 name: "blogItem2"
-                widget: "object"
+                widget: "list"
                 collapsed: true
                 fields:
                   - label: "Blog Image"
@@ -107,7 +107,7 @@ collections:
 
               - label: "Blog Item 3"
                 name: "blogItem3"
-                widget: "object"
+                widget: "list"
                 collapsed: true
                 fields:
                   - label: "Blog Image"

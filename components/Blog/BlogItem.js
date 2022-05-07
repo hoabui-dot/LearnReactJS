@@ -5,16 +5,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faClock, faComment } from "@fortawesome/free-solid-svg-icons";
 
 const BlogItem = ({ data, flip }) => {
-  const { image, fieldWork, jobName, work, workTitle, workDescription } = data;
+  const { blogImg, fieldWork, jobName, work, workTitle, desc } = data;
   return (
     <div className={`${styles.blog__item} ${flip}`}>
       <div className={styles.item__image}>
         <figure>
-          <div className='image__blog'>
-            <figure>
-              <Image src={image} alt='Blog Images' layout='fill' />
-            </figure>
-          </div>
+          <img src={blogImg} alt='Blog Images' />
           <div className={styles.image__infos}>
             <div className={styles.user}>
               <FontAwesomeIcon icon={faUser} />
@@ -46,7 +42,7 @@ const BlogItem = ({ data, flip }) => {
         </div>
         <div className={styles.description}>
           <p>{workTitle}</p>
-          <p>{workDescription}</p>
+          <p>{desc}</p>
         </div>
         <div className={styles.readMore}>
           <a href='#'>Read More</a>
