@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { Link } from "react-scroll";
-import Image from "next/image";
-import { attributes } from "../../content/Home.md";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ButtonScrollTop from "../ButtonScrollTop/Button";
-import styles from "./Banner.module.scss";
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
+import Image from 'next/image';
+// import { attributes } from '../../content/Home.md';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ButtonScrollTop from '../ButtonScrollTop/Button';
+import styles from './Banner.module.scss';
 import {
   faMinus,
   faUser,
@@ -18,10 +18,10 @@ import {
   faMoneyBill,
   faPencilSquare,
   faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 
 const Banner = () => {
-  const { banner } = attributes;
+  // const { banner } = attributes;
 
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -33,15 +33,15 @@ const Banner = () => {
     <section id={styles.banner} className={styles.banner}>
       <nav
         id={styles.theMenu}
-        className={`${styles.menu} ${toggleMenu ? styles.menu__open : ""}`}
+        className={`${styles.menu} ${toggleMenu ? styles.menu__open : ''}`}
       >
         <div className={styles.menu__wrap}>
           <div className={styles.logo__flat}>
-            <img
+            {/* <img
               alt='personal logo'
               className='img__responsive'
               src={banner.avatar}
-            />
+            /> */}
           </div>
           <br />
           <Link to='banner' spy={true} smooth={true} duration={500}>
@@ -110,26 +110,26 @@ const Banner = () => {
             <FontAwesomeIcon
               icon={faMinus}
               className={`${styles.top__bar} ${
-                toggleMenu ? styles.top__transform : ""
+                toggleMenu ? styles.top__transform : ''
               }`}
             />
             <FontAwesomeIcon
               icon={faMinus}
               className={`${styles.middle__bar} ${
-                toggleMenu ? styles.middle__transform : ""
+                toggleMenu ? styles.middle__transform : ''
               }`}
             />
             <FontAwesomeIcon
               icon={faMinus}
               className={`${styles.bottom__bar} ${
-                toggleMenu ? styles.bottom__transform : ""
+                toggleMenu ? styles.bottom__transform : ''
               }`}
             />
           </div>
         </div>
       </nav>
       <figure className={styles.header__background}>
-        <img src={banner.bg} alt='Header Background' />
+        <img src='/uploads/background1233.jpeg' alt='Header Background' />
       </figure>
       <ButtonScrollTop />
     </section>

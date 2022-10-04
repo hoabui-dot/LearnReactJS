@@ -1,7 +1,7 @@
-import React from "react";
-import { attributes } from "../../content/Home.md";
-import styles from "./Card.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+// import { attributes } from '../../content/Home.md';
+import styles from './Card.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEnvelope,
   faGlobe,
@@ -13,10 +13,10 @@ import {
   faDove,
   faG,
   faWifi,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 
 const Card = () => {
-  const { card } = attributes;
+  // const { card } = attributes;
 
   return (
     <section className={styles.card}>
@@ -24,8 +24,8 @@ const Card = () => {
         <div className={styles.card__wrap}>
           <div className={styles.card__content}>
             <div className={styles.card__name}>
-              <h4>{card.yourName}</h4>
-              <h6>{card.yourJob}</h6>
+              <h4>BUI VAN HOA</h4>
+              <h6>FRONT-END DEVELOPER</h6>
             </div>
             <div className={styles.card__infos}>
               <div className={styles.infos__list}>
@@ -91,7 +91,7 @@ const Card = () => {
               <FontAwesomeIcon icon={faPlus} />
             </button>
             <figure className={styles.avatar}>
-              <img src={card.avtCard} alt='Avatar' />
+              <img src='/uploads/avtPortfolio.png' alt='Avatar' />
             </figure>
           </div>
         </div>
